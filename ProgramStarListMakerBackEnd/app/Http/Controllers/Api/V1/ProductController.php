@@ -94,7 +94,7 @@ class ProductController extends Controller
     public function getProductsByName(Request $request)
     {
         $products = Product::where('state', true)
-            ->where('name', 'ilike', '%' . $request->search . '%')
+            ->where('name', 'like', '%' . $request->search . '%')
             ->whereHas('category', function ($query) {
                 $query->where('state', true);
             })

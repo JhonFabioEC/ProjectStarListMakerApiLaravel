@@ -28,7 +28,8 @@ class ProductFactory extends Factory
             'stock' => $this->faker->numberBetween(0, 100),
             'barcode' => $this->faker->text(13),
             'section' => $this->faker->sentence(1),
-            'image' => $faker->imageUrl(),
+            // 'image' => $faker->imageUrl(),
+            'image' => 'default.svg',
             'description' => $this->faker->text(200),
             'state' => $this->faker->boolean(),
             'category_id' => function () {

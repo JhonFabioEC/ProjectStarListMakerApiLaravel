@@ -50,7 +50,7 @@ class DatabaseSeeder extends Seeder
             'username' => 'admin',
             'email_address' => 'admin@prueba.test',
             'password' => '1q2w3e4r',
-            'account_status' => 'true',
+            'account_status' => true,
             'role_type_id' => 1,
             'email_verified_at' => now(),
             'remember_token' => 1
@@ -61,7 +61,7 @@ class DatabaseSeeder extends Seeder
             'username' => 'mercaz',
             'email_address' => 'mercaz@prueba.test',
             'password' => '1q2w3e4r',
-            'account_status' => 'true',
+            'account_status' => true,
             'role_type_id' => 2,
             'email_verified_at' => now(),
             'remember_token' => 1
@@ -71,7 +71,7 @@ class DatabaseSeeder extends Seeder
             [
                 'first_name' => 'Jhon',
                 'last_name' => 'España',
-                'birth_date' => '01-01-1999',
+                'birth_date' => '1999-01-01',
                 'sex' => 'M',
                 'document_number' => '1234567890',
                 'phone_number' => '1234567890',

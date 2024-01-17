@@ -20,15 +20,15 @@
     <label class="form-label" for="state">Estado</label>
     <select class="form-select col-sm-12" id="state" name="state">
         <option value="">Escoger estado...</option>
-        <option value="true"
+        <option value="1"
             @isset($brand)
-                    {{ $brand['state'] == true ? 'selected' : '' }}
+                    {{ $brand['state'] == 1 ? 'selected' : '' }}
                 @endisset>
             Activado</option>
 
-        <option value="false"
+        <option value="0"
             @isset($brand)
-                    {{ $brand['state'] == false ? 'selected' : '' }}
+                    {{ $brand['state'] == 0 ? 'selected' : '' }}
                 @endisset>
             Desactivado</option>
     </select>
