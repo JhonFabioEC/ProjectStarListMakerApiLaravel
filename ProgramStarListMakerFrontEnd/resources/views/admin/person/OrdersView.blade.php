@@ -48,7 +48,10 @@
                             </div>
                         </div>
                     </div>
-                    {{ $total +=  $item_order['price'] * $item_order['quantity'] }};
+
+                    @php
+                        $total +=  $item_order['price'] * $item_order['quantity']
+                    @endphp
                 @endforeach
             </div>
             <div class="col-4">
